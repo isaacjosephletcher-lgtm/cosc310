@@ -22,7 +22,6 @@ abstract public class Target {
     abstract public int method(int indicesOrnums[]);
 
     // calls the method under test TRIALS number of times
-    // 
     public double runTests(int indicesOrnums[]) {
         long total = 0;
         for (int i = 0; i < TRIALS; i++) {
@@ -30,6 +29,7 @@ abstract public class Target {
             int result = method(indicesOrnums);
             long end = System.nanoTime();
             long elapsed = end-start;
+            total += elapsed;
             results[i] = elapsed;
         }
         double avg = total / (double) TRIALS;

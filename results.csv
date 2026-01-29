@@ -1,15 +1,40 @@
-array,random_access,1,1969.50
-array,random_access,2,363.20
-array,random_access,3,277.00
-array,random_access,4,301.20
-array,random_access,5,321.70
-arraylist, random_access,1,10817.70
-arraylist, random_access,2,2777.40
-arraylist, random_access,3,2024.50
-arraylist, random_access,4,737.30
-arraylist, random_access,5,597.70
-array,append,1,2705.30
-array,append,2,663.80
-array,append,3,492.20
-array,append,4,474.10
-array,append,5,461.30
+array,random_access,1,2169.79
+array,random_access,2,504.69
+array,random_access,3,456.20
+array,random_access,4,438.32
+array,random_access,5,453.44
+arraylist, random_access,1,20106.29
+arraylist, random_access,2,8301.34
+arraylist, random_access,3,4334.75
+arraylist, random_access,4,2090.72
+arraylist, random_access,5,2002.62
+array,append,1,3923.57
+array,append,2,4298.46
+array,append,3,7008.96
+array,append,4,1932.26
+array,append,5,1870.69
+arraylist, append,1,11491.47
+arraylist, append,2,6110.07
+arraylist, append,3,99110.88
+arraylist, append,4,3385.50
+arraylist, append,5,6977.63
+array,insert,1,7830.85
+array,insert,2,3616.64
+array,insert,3,3947.73
+array,insert,4,4952.76
+array,insert,5,10621.53
+arraylist, insert,1,4170684.85
+arraylist, insert,2,4453277.70
+arraylist, insert,3,6116581.08
+arraylist, insert,4,8099163.13
+arraylist, insert,5,9365994.01
+array, remove,1,1833.74
+array, remove,2,1085.57
+array, remove,3,10445.21
+array, remove,4,7746.71
+array, remove,5,1389.76
+arraylist, remove,1,2141204.30
+arraylist, remove,2,538203.77
+arraylist, remove,3,1035.29
+arraylist, remove,4,546.08
+arraylist, remove,5,543.10
