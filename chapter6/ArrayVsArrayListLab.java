@@ -62,32 +62,34 @@ public class ArrayVsArrayListLab {
         }
         
         // output all the results
+        System.out.println("Operation: Random_Access\nArray AVG: " + testAverages[0] + " ms\nArrayList AVG: " + testAverages[1] + " ms");
         if (testAverages[0] < testAverages[1]) {
-            System.out.println("array wins! on random access with a time of " + testAverages[0]);
+            System.out.println("WINNER: Array\n");
         }
         else {
-            System.out.println("list wins! on random acces of a time of " + testAverages[1]);
+            System.out.println("Winner: ArrayList\n");
         }
 
+        System.out.println("Operation: Append\nArray AVG: " + testAverages[2] + " ms\nArrayList AVG: " + testAverages[3] + " ms");
         if (testAverages[2] < testAverages[3]) {
-            System.out.println("array wins! on append with a time of " + testAverages[2]);
+            System.out.println("WINNER: Array\n");
         }
         else {
-            System.out.println("list wins! on append with a time of " + testAverages[3]);
+            System.out.println("Winner: ArrayList\n");
         }
-
+        System.out.println("Operation: Insert\nArray AVG: " + testAverages[4] + " ms\nArrayList AVG: " + testAverages[5] + " ms");
         if (testAverages[4] < testAverages[5]) {
-            System.out.println("array wins! on insert with a time of " + testAverages[4]);
+            System.out.println("WINNER: Array\n");
         }
         else {
-            System.out.println("list wins! on insert with a time of " + testAverages[5]);
+            System.out.println("Winner: ArrayList\n");
         }
-
+        System.out.println("Operation: Remove\nArray AVG: " + testAverages[6] + " ms\nArrayList AVG: " + testAverages[7] + " ms");
         if (testAverages[6] < testAverages[7]) {
-            System.out.println("array wins! on remove with a time of " + testAverages[6]);
+            System.out.println("WINNER: Array\n");
         }
         else {
-            System.out.println("list wins! on remove with a time of " + testAverages[7]);
+            System.out.println("Winner: ArrayList\n");
         }
 
 
