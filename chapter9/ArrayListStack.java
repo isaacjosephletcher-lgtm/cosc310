@@ -18,11 +18,11 @@ public class ArrayListStack<T> implements Stack<T> {
 
     @Override
     public T pop() throws Exception {
+        // TODO
         if (isEmpty()) {
             throw new EmptyStackException();
         }
-        data.removeLast();
-        return null;
+        return data.removeLast();
     }
 
     @Override

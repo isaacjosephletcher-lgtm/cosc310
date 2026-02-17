@@ -20,9 +20,7 @@ public class DLinkedListQueue<T> implements Queue<T> {
 
     @Override
     public T dequeue() throws Exception {
-        if (isEmpty()) {
-            throw new NoSuchElementException();
-        }
+        // TODO (dequeue from head using removeFirst())
         return list.removeFirst().getData();
     }
 

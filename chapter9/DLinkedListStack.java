@@ -19,9 +19,8 @@ public class DLinkedListStack<T> implements Stack<T> {
 
     @Override
     public T pop() throws Exception {
-        if (isEmpty()) {
-            throw new EmptyStackException();
-        }
+        // TODO
+       
         return list.removeLast().getData();
     }
 

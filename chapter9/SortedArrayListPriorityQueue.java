@@ -11,6 +11,7 @@ public class SortedArrayListPriorityQueue<T> implements PriorityQueue<T> {
             this.priority = priority;
             this.data = data;
         }
+
         @Override
         public int compareTo(Entry<T> o) {
             return o.priority - this.priority;
@@ -33,7 +34,7 @@ public class SortedArrayListPriorityQueue<T> implements PriorityQueue<T> {
     @Override
     public T dequeue() throws Exception {
         // TODO: remove index 0
-        return null;
+        return list.remove(0).data;
     }
 
     @Override
