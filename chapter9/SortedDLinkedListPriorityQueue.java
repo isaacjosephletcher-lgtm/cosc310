@@ -15,7 +15,7 @@ public class SortedDLinkedListPriorityQueue<T> implements PriorityQueue<T> {
 
         @Override
         public int compareTo(Entry<T> o) {
-            return o.priority - this.priority;
+            return this.priority - o.priority;
         }
     }
 
@@ -38,15 +38,15 @@ public class SortedDLinkedListPriorityQueue<T> implements PriorityQueue<T> {
         // Insert the new item before the one you just found
         DNode<Entry<T>> curr = list.get(0);
         while (curr!=null) {
-            if (priority<curr.getData().priority) {
+            if (priority < curr.getData().priority) {
                 list.addBefore(curr, newentry);
-                break;
+                return;
             }
             curr = curr.getNext();
         }
 
         // if you get to the end of the list, add it at the end
-        if (curr==null) {
+        if (curr == null) {
             list.add(newentry); 
         }
 
@@ -54,14 +54,18 @@ public class SortedDLinkedListPriorityQueue<T> implements PriorityQueue<T> {
 
     @Override
     public T dequeue() throws Exception {
-        // TODO: removeFirst()
-        return null;
+        if (isEmpty()) {
+            throw new Exception("Priority Queue is empty");
+        }
+        return list.removeFirst().getData().data;
     }
 
     @Override
     public T front() throws Exception {
-        // TODO: peek head
-        return null;
+        if (isEmpty()) {
+            throw new Exception("Priority Queue is empty");
+        }
+        return list.get(0).getData().data;
     }
 
     @Override

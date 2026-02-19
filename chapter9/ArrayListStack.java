@@ -27,6 +27,9 @@ public class ArrayListStack<T> implements Stack<T> {
 
     @Override
     public T top() throws Exception {
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
         return data.getLast();
     }
 
