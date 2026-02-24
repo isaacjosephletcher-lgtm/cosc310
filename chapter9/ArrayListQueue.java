@@ -67,10 +67,11 @@ public class ArrayListQueue<T> implements Queue<T> {
             bigbuffer.add(null);
         }
         for (int i=0; i<oldcap; i++) {
-            bigbuffer.set(i, buffer.get(head));
+            bigbuffer.set(i,buffer.get(head));
             head = (head + 1) % oldcap;
         }
         buffer = bigbuffer; // the "old" swaperoo trick
+        head = 0;
         head = 0;
         tail = oldcap;
     }

@@ -3,7 +3,6 @@ package chapter9;
 import java.util.NoSuchElementException;
 
 import my.util.DLinkedList;
-import my.util.DNode;
 
 public class DLinkedListQueue<T> implements Queue<T> {
 

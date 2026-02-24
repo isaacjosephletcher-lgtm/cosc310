@@ -15,6 +15,7 @@ public class SortedArrayListPriorityQueue<T> implements PriorityQueue<T> {
         @Override
         public int compareTo(Entry<T> o) {
             return this.priority - o.priority;
+            return this.priority - o.priority;
         }
     }
 

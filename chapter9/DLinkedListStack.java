@@ -16,6 +16,7 @@ public class DLinkedListStack<T> implements Stack<T> {
     public void push(T item) {
         // TODO (use tail as the top)
         list.add(item);
+        list.add(item);
     }
 
     @Override

@@ -66,11 +66,10 @@ public class BenchmarkDriver {
             if (!q.isEmpty()) throw new RuntimeException("Queue empty failed");
         }
 
-        ArrayList<PriorityQueue<Integer>> pqs = new ArrayList<>(); {
-            pqs.add(new chapter9.SortedArrayListPriorityQueue<>());
-            pqs.add(new chapter9.SortedDLinkedListPriorityQueue<>());
-            pqs.add(new chapter9.BinaryHeapPriorityQueue<>());
-        };
+        ArrayList<PriorityQueue<Integer>> pqs = new ArrayList<>();
+        pqs.add(new chapter9.SortedArrayListPriorityQueue<>());
+        pqs.add(new chapter9.SortedDLinkedListPriorityQueue<>());
+        pqs.add(new chapter9.BinaryHeapPriorityQueue<>());
 
         for (PriorityQueue<Integer> pq : pqs) {
             pq.enqueue(5, 50);
